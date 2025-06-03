@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#modo-noturno-btn{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo branco suave */
+    color: #003366; /* Azul escuro no texto */
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366; /* Azul forte */
+    color: #f8f5f5; /* Texto branco */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Seções */
+section {
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* Fundo branco */
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 51, 102, 0.3); /* Sombra azul */
+}
+
+/* Lista */
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+
+/* Links */
+a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #003366; /* Azul forte */
+    color: #ffffff; /* Texto branco */
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer img {
+    width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+/* Modo Noturno */
+.modo-noturno {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilização de seções no modo noturno */
+.modo-noturno section {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Rodapé no modo noturno */
+.modo-noturno footer {
+    background-color: #444; /* Fundo escuro */
+    color: #FFD700; /* Amarelo-dourado */
+}
+img {
+    width: 40%; /* Reduz a imagem para metade do tamanho */
+    height: auto;
+}
+
+/* Adicionar uma linha à esquerda das seções */
+section {
+    position: relative;
+    padding-left: 20px; /* Espaçamento para a linha */
+    border-left: 5px solid #003366; /* Linha vertical azul */
+}
+/* Melhorar a aparência das listas */
+ul {
+    padding-left: 20px;
+}
