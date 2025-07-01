@@ -20,3 +20,38 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const btnAcessibilidade = document.createElement("button");
+    btnAcessibilidade.textContent = "🦽 Acessibilidade";
+    btnAcessibilidade.id = "btn-acessibilidade";
+    document.body.appendChild(btnAcessibilidade);
+
+    let textoAumentado = false;
+
+    btnAcessibilidade.addEventListener("click", function () {
+        const elementosTexto = document.querySelectorAll("body, h1, h2, p, li, a");
+        elementosTexto.forEach((el) => {
+            el.style.fontSize = textoAumentado ? "" : "1.25em";
+        });
+        textoAumentado = !textoAumentado;
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const btnFonte = document.createElement("button");
+    btnFonte.id = "btn-fonte";
+    btnFonte.textContent = "🔍 + / - Texto";
+    document.body.appendChild(btnFonte);
+
+    let tamanhoFonte = 100;
+
+    btnFonte.addEventListener("click", function () {
+        tamanhoFonte += 10;
+        if (tamanhoFonte > 150) tamanhoFonte = 100; // volta ao tamanho original
+
+        const elementos = document.querySelectorAll("body, h1, h2, p, li, a");
+        elementos.forEach((el) => {
+            el.style.fontSize = `${tamanhoFonte}%`;
+        });
+    });
+});
+
